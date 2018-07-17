@@ -1,0 +1,95 @@
+<!-- <p>
+  books-details works!
+</p> -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="product-image">
+          <div class="view hm-zoom z-depth-2" style="cursor: pointer">
+            <img src="..\..\assets\images\Mybook_1.jpg" alt="" width="50%" class="img-fluid rounded"y>
+            <!-- <img src="{{ }}" alt="" width="50%" class="img-fluid rounded"y> -->
+          </div>
+          <div class="" style="margin-top:15px ; align-self: center">
+            <!-- <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Product Price</h6>
+                </div>
+                <span class="text-muted" style="cursor: pointer">
+                  <!-- ${{product.productPrice}} 
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">books Seller</h6>
+                </div>
+                <span class="text-muted" style="cursor: pointer">
+                  <!-- {{product.productSeller}} 
+                </span>
+              </li>
+            </ul> -->
+           <button class="btn btn-primary" routerLink="/viewcart">Add to Cart</button>   &nbsp; &nbsp;
+           <button class="btn btn-success" routerLink="/payment">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="product-detail">
+          <h5 class="product-head" style="font-weight: bold ; font-size: 20px">Book Details</h5>
+          <table class="table" cellspacing="0" style="max-height: 28px ">
+            <tbody>
+              <tr>
+                <th scope="row">Book Name</th>
+                <td>
+                  <!-- {{books.bookName}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Book ID</th>
+                <td>
+                  <!-- {{books.bookid}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Book Description</th>
+                <td>
+                  <!-- {{books.bookDescription}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Book Category</th>
+                <td>
+                  <!-- {{books.bookCategoryid}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Book Author</th>
+                <td>
+                  <!-- {{books.bookauthor}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Price</th>
+                <td>
+                  <!-- {{books.bookPrice}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Rating</th>
+                <td>
+                  <!-- {{books.bookRating}} -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Rating Count</th>
+                <td>
+                  <!-- {{books.bookRating_count}} -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

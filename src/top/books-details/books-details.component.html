@@ -7,30 +7,40 @@
       <div class="col-md-4 col-sm-4">
         <div class="product-image">
           <div class="view hm-zoom z-depth-2" style="cursor: pointer">
-            <img src="..\..\assets\images\Mybook_1.jpg" alt="" width="50%" class="img-fluid rounded"y>
+            <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/No_image_available_600_x_450.svg/900px-No_image_available_600_x_450.svg.png " alt="" width="50%" class="img-fluid rounded">
             <!-- <img src="{{ }}" alt="" width="50%" class="img-fluid rounded"y> -->
           </div>
           <div class="" style="margin-top:15px ; align-self: center">
-            <!-- <ul class="list-group mb-3">
-              <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                  <h6 class="my-0">Product Price</h6>
+            
+           <!-- <button class="btn btn-primary" routerLink="/viewcart">Add to Cart</button>-->
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Add to cart
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div> -->
+                  <div class="modal-body">
+                    Your Product has been added to the cart successfully.
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Continue Shopping</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
                 </div>
-                <span class="text-muted" style="cursor: pointer">
-                  <!-- ${{product.productPrice}} 
-                </span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                  <h6 class="my-0">books Seller</h6>
-                </div>
-                <span class="text-muted" style="cursor: pointer">
-                  <!-- {{product.productSeller}} 
-                </span>
-              </li>
-            </ul> -->
-           <button class="btn btn-primary" routerLink="/viewcart">Add to Cart</button>   &nbsp; &nbsp;
-           <button class="btn btn-success" routerLink="/payment">Buy Now</button>
+              </div>
+            </div>    
+           &nbsp; &nbsp; 
+           <!-- <button class="btn btn-success">Buy Now</button> -->
+           <!-- <button class="btn btn-success" routerLink="/payment">Buy Now</button> -->
           </div>
         </div>
       </div>
@@ -42,49 +52,31 @@
               <tr>
                 <th scope="row">Book Name</th>
                 <td>
-                  <!-- {{books.bookName}} -->
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Book ID</th>
-                <td>
-                  <!-- {{books.bookid}} -->
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Book Description</th>
-                <td>
-                  <!-- {{books.bookDescription}} -->
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Book Category</th>
-                <td>
-                  <!-- {{books.bookCategoryid}} -->
+                  {{bookdetail.name}}
                 </td>
               </tr>
               <tr>
                 <th scope="row">Book Author</th>
                 <td>
-                  <!-- {{books.bookauthor}} -->
+                  {{bookdetail.author}}
                 </td>
               </tr>
               <tr>
                 <th scope="row">Price</th>
                 <td>
-                  <!-- {{books.bookPrice}} -->
+                  {{bookdetail.price}}
                 </td>
               </tr>
               <tr>
                 <th scope="row">Rating</th>
                 <td>
-                  <!-- {{books.bookRating}} -->
+                  {{bookdetail.rating}}
                 </td>
               </tr>
               <tr>
                 <th scope="row">Rating Count</th>
                 <td>
-                  <!-- {{books.bookRating_count}} -->
+                  {{bookdetail.ratingCount}}
                 </td>
               </tr>
             </tbody>

@@ -1,11 +1,12 @@
 <!-- <p>
-  best sellers!
+  topbest works!
 </p> -->
 
-<app-side-category></app-side-category>
-<div><h2>Best Sellers</h2></div>
-<br>
-<div class="col-sm-9">
+
+<div class="col-md-12">
+    <div>
+        <h3>Best Sellers <button style="float: right" routerLink="/bestsellers" >View all</button></h3>
+      </div>
   <div class="row">
     <div class="col-md-3" *ngFor="let books of bookList">
       <div class="thumbnail product-thumb">
@@ -18,9 +19,11 @@
           <!-- <p>Description:{{ books.description }}</p> -->
         <p>₹ {{ books.price }}</p>
         <!-- <p>Author: {{ books.author }}</p> -->
-        <button type="button" class="btn btn-success" routerLink="/books-details/{{ books.id }}">
+        <button type="button" class="btn btn-success" routerLink="/books-details/{{ books.id }}" style="cursor: pointer">
           <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
         </button>
         
   </div>
 </div>
+
+

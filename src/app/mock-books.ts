@@ -1,8 +1,8 @@
 import { Books } from './books';
 
-export const BOOKS : Books[] = [
+export const books : Books[] = [
     {
-            book_id: 1234,
+            book_id: 101,
             book_category_id: 1,
             book_name: 'Answer and Question',
             book_desc: 'Very good book for competative exams',

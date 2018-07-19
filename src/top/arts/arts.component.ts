@@ -1,33 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Books } from '../../app/books';
 import { BooksService } from '../../app/books.service';
+
 @Component({
-  selector: 'app-bestsellers',
-  templateUrl: './bestsellers.component.html',
-  styleUrls: ['./bestsellers.component.css']
+  selector: 'app-arts',
+  templateUrl: './arts.component.html',
+  styleUrls: ['./arts.component.css']
 })
-export class BestsellersComponent implements OnInit {
+export class ArtsComponent implements OnInit {
   sub: any;
   books : any = [];
   bookList: any = [];
-
   constructor(
     private route: ActivatedRoute, 
     private booksService: BooksService
   ) { }
 
   ngOnInit() {
-    this.getBestBooks();
+    this.getArtsBooks();
   }
 
-  getBestBooks(): void {
-    this.booksService.getBestBooks()
+  getArtsBooks(): void {
+    this.booksService.getArtsBooks()
     .subscribe(
       (books) => {
         this.bookList = books.json();
       });
-
+    }
   }
-
-}

@@ -1,3 +1,17 @@
+row {
+    border: 1px solid black;
+}
+
+h3 {
+    padding-left: 0;
+    background: #337ab7;
+}
+
+div button {
+    float: right;
+    margin-left: -50%;
+}
+
 
 .product-thumb {
     padding: 25px 15px;
@@ -21,5 +35,9 @@ h2 {
     text-decoration: underline;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(46, 46, 48);
+  }
+
+  h3 {
+      height: 32px;
   }
 

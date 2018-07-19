@@ -8,20 +8,32 @@ import { KidsBooksComponent } from '../top/kids-books/kids-books.component';
 import { BestsellersComponent } from '../top/bestsellers/bestsellers.component';
 import { BooksDetailsComponent } from '../top/books-details/books-details.component';
 import {PaymentComponent } from '../checkout/payment/payment.component';
-// C:\Users\pb9536\Desktop\Hyd Web Dev\udemy\pageturner\src\checkout\payment\payment.component.html
+import { ArtsComponent } from '../top/arts/arts.component';
+import { BiographiesComponent } from '../top/biographies/biographies.component';
+import { ComputerComponent } from '../top/computer/computer.component';
+import { EntertainmentComponent } from '../top/entertainment/entertainment.component';
+import { HistoryComponent } from '../top/history/history.component';
+import { TopComponent } from '../top/top.component';
+import { TopbestComponent } from '../top/topbest/topbest.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeMainComponent },
-    { path: 'books-detail', component: BooksDetailsComponent }, 
+    { path: 'books-detail', component: BooksDetailsComponent },
+    { path: 'books-details/:bookid', component: BooksDetailsComponent }, 
     { path: 'new-release', component: NewReleaseComponent },
     { path: 'side-category', component: SideCategoryComponent },
     { path: 'adults', component: AdultsComponent },
     { path: 'kids-books', component: KidsBooksComponent },
     { path: 'bestsellers', component: BestsellersComponent },
-    { path: 'booksdetails', component: BooksDetailsComponent },
     { path: 'payment', component: PaymentComponent },
-    
+    { path: 'arts', component: ArtsComponent },
+    {path: 'biographies', component:BiographiesComponent},
+    {path: 'computer', component:ComputerComponent},
+    {path: 'entertainment', component:EntertainmentComponent},
+    {path: 'history', component:HistoryComponent},
+    {path:'top',component:TopComponent},
+    {path:'topbest',component:TopbestComponent}
   ];
   
   @NgModule({

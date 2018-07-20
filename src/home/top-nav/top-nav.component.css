@@ -2,21 +2,25 @@ nav {
     background-color:#2861ba;
     
     }
+/* .navbar-default .navbar-brand:hover {
+       color: white;
+}
 
-.navbar-brand {
-        color:white;
-        font-size: 30px;
-    }
-    .navbar-nav>li>a {
-        color:white;
-        font-size: 20px;
-    }
-
-   .navbar-brand>a{
+.navbar-brand { 
     color:white;
-   } 
+    font-size: 30px;
+    }  */
 
-   .navbar-default .navbar-brand:hover {
+  
+.navbar-nav>li>a {   
+    color:white;   
+    font-size: 20px; }
+
+   /* .navbar-brand>a{
+    color:white;
+   }  */
+
+   .navbar-default  {
      color: white;
 
    }

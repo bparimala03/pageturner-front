@@ -2,9 +2,11 @@ row {
     border: 1px solid black;
 }
 
-h3 {
+header {
+    font-size: 24px;
     padding-left: 0;
     background: #337ab7;
+    /* backgr */
 }
 
 

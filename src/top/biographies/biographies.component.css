@@ -1,17 +1,17 @@
 
 .product-thumb {
-    padding: 25px 15px;
+    padding: 15px 0px;
     display: inline-block;
     vertical-align: top;
-    width: 80%;
-    width: 200px;
-    height: 350px;
+    max-width: 80%;
+    max-height: 80%;
+    /* width: 200px;
+    height: 350px; */
     text-align: center;
     box-sizing: border-box;
     font-family: Roboto, Arial, sans-serif;
     letter-spacing: 0;
 }
-
 em {
     color: black;
     font-size: 12px;

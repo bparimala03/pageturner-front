@@ -22,6 +22,16 @@ nav {
 
    .navbar-default  {
      color: white;
+     position: 0;
 
+   }
+
+   a:hover ,li a:hover {
+       background-color: #0754cf;
+       text-decoration: unset;
+   }
+   
+   li {
+    font-size: 20px;
    }
    

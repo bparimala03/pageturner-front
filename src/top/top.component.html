@@ -1,18 +1,19 @@
 
-<div class="col-sm-9">
-    <!-- <div>
-        <h3>New Release</h3>
-        <div class="float-right"><button>View all</button></div><br>
-    </div> -->
-    <header>New Release
-      <button routerLink="/new-release" style="float:right ; font-size: 20px ;" >View all</button>
-    </header>
-    <br>
+<div class=" container-fluid col-sm-9">
+  <div style="background-color: white">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">New Release</li>
+            <a routerLink="/new-release"><h5 style="float:right ; padding-right: 5px">> View All</h5></a>
+          </ol>
+        </nav> 
+        <hr>
+   
   <div class="row">
     <div class="col-md-3" *ngFor="let books of bookList">
-      <div class="thumbnail product-thumb">
+      <div class=" thumbnail product-thumb">
           <a routerLink="/books-details/{{ books.id}}" style="cursor: pointer">
-            <img src= " https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/No_image_available_600_x_450.svg/900px-No_image_available_600_x_450.svg.png" alt="Lights" style="width:100%">
+            <img src= "../assets/images/adults_book_2.jpg" alt="Lights" style="width:100% ">
             <div class="product-brand"> 
               <p>{{ books.name }}<br> <em> by {{ books.author }}</em></p>
             </div>
@@ -27,6 +28,7 @@
       </div>
     </div>
   </div>
+</div>
 
 <app-topbest></app-topbest>
 </div>

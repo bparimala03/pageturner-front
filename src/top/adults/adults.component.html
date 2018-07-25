@@ -1,16 +1,16 @@
-<!-- <p>
-  adults works!
-</p> -->
 
+<div>
 <app-side-category></app-side-category>
-<h2>Adults</h2>
-<br>
-<div class="col-sm-9">
+</div>
+<div class=" col-md-9 col-lg-9 col-sm-12">
+    <h2>Adults</h2>
+    <hr>
   <div class="row">
     <div class="col-md-3" *ngFor="let books of bookList">
       <div class="thumbnail product-thumb">
           <a routerLink="/books-details/{{ books.id }}" style="cursor: pointer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/No_image_available_600_x_450.svg/900px-No_image_available_600_x_450.svg.png" alt="Lights" style="width:100%">
+            <img src="../../assets/images/imageNotAvailable.jpg" alt="Lights" style="width:100%" >
+            <!-- <img src="{{books.image_url }}" alt="Lights" width="50%" class="img-fluid rounded"> -->
             <div class="product-brand"> 
               <p>{{ books.name }}<br> <em> by {{ books.author }}</em></p>
             </div>
@@ -18,8 +18,11 @@
           <!-- <p>Description:{{ books.description }}</p> -->
         <p>₹ {{ books.price }}</p>
         <!-- <p>Author: {{ books.author }}</p> -->
+        <div style="vertical-align: baseline">
         <button type="button" class="btn btn-success" routerLink="/books-details/{{ books.id }}">
           <span class="glyphicon glyphicon-plus-sign"></span> Add to cart
         </button>
+        </div>
   </div>
 </div>
+

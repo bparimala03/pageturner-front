@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BooksService } from '../../app/books.service';
 
+
 @Component({
   selector: 'app-books-details',
   templateUrl: './books-details.component.html',

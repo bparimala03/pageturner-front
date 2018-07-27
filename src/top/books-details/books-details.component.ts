@@ -21,12 +21,12 @@ export class BooksDetailsComponent implements OnInit {
     this.sub = this.route.params.subscribe(
       (params)=> {
         console.log(params['bookid']);        
-        this.getAdultBooks(params['bookid']);
+        this.getBooksbyid(params['bookid']);
       }
     )
   }
 
-  getAdultBooks(id): void {
+  getBooksbyid(id): void {
     this.booksService.getBooksbyid(id )
     .subscribe(
       (books) => {

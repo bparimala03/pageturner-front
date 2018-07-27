@@ -19,6 +19,7 @@ header {
     letter-spacing: 0;
     background-color: white;
     margin-bottom: 20px;
+    border: 0px;
 }
 
 em {
@@ -39,10 +40,13 @@ h2 {
 .breadcrumb {
     background-color:white;
     font-size: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0px;
 }
 
 hr {
     margin:10px;
+    color: cadetblue;
+    border-width: 5px;
 }
 

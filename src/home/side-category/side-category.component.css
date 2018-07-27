@@ -5,15 +5,17 @@
       
   .sidenav {
     padding-top: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     background-color:white;
     /* height: 650px; */
   }
 
   .header-label {
-    color: white;
+    /* color: white; */
+    font-size: 20px;
     text-transform: uppercase !important;
-    background-color:#2861ba;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* background-color:#2861ba; */
   }
   
   .checkbox {
@@ -23,4 +25,15 @@
   ul {
     font-size: 16px;
     -webkit-padding-start: 10px;
+    list-style-type: none; 
   }
+  li {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+  }
+
+  hr {
+    margin:10px;
+    color: cadetblue;
+    border-width: 5px;
+}

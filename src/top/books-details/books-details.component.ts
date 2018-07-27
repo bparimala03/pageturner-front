@@ -31,8 +31,9 @@ export class BooksDetailsComponent implements OnInit {
     .subscribe(
       (books) => {
         this.bookdetail = books.json();
+        // alert (this.bookdetail.name)
         this.showbookdetail= 'true';      
-        console.log(this.bookdetail.bookName);
+        console.log(this.bookdetail.name);
       });
   }
 }

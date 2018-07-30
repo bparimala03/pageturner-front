@@ -11,9 +11,9 @@
       <div class="thumbnail product-thumb">
           <a routerLink="/books-details/{{ books.id}}" style="cursor: pointer">
             <!-- <img src="../../assets/images/imageNotAvailable.jpg" alt="Lights" style="width:100%" > -->
-            <img src="{{books.imageUrl }}" alt="Lights" width="50%" class="img-fluid rounded">
+            <img src="../../assets/images/{{books.name}}.jpg" alt="Lights" width="100%" class="img-fluid rounded">
             <div class="product-brand"> 
-              <p>{{ books.name }}<br> <em> by {{ books.author }}</em></p>
+              <p class="wrap">{{ books.name }}<br> <em> by {{ books.author }}</em></p>
             </div>
           </a>
           <!-- <p>Description:{{ books.description }}</p> -->

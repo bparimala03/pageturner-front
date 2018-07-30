@@ -25,6 +25,7 @@ const routes: Routes = [
     { path: 'side-category', component: SideCategoryComponent },
     { path: 'adults', component: AdultsComponent },
     { path: 'kids-books', component: KidsBooksComponent },
+    // { path: 'kids-books/:bookid', component: KidsBooksComponent },
     { path: 'bestsellers', component: BestsellersComponent },
     { path: 'payment', component: PaymentComponent },
     { path: 'arts', component: ArtsComponent },

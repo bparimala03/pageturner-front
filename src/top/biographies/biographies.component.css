@@ -23,4 +23,10 @@ h2 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: rgb(48, 47, 46);
   }
+  .wrap {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
 

@@ -25,4 +25,11 @@ h2 {
     color: rgb(46, 46, 48);
   }
 
+  .wrap {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
   
